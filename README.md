@@ -5,6 +5,13 @@
 使用方法：
 
 1. 下载当前文件
-2. 在当前文件的db文件中打开终端，执行json-server --watch db.json --port 5000
-3. 在当前文件中打开终端，执行npm install
-4. 在当前终端中执行npm start
+2. 在终端中执行**npm install -g json-server**(已下载请忽略这一步)
+3. 在当前文件的db文件中打开终端，执行**json-server --watch db.json --port 5000**
+4. 在当前文件中打开终端，执行**npm install**(请稍等片刻)
+5. 在当前终端中执行**npm start**(请稍等片刻)
+
+登录方法：
+
+- 超级管理员的用户名：admin		密码:123456
+- 其他用户可以在admin用户左侧菜单的用户管理/用户列表中的更新操作中获取密码
+- 游客登录：直接登录

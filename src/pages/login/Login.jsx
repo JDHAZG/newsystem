@@ -27,9 +27,6 @@ export default function Login() {
       localStorage.removeItem("token");
       setTimeout(() => { localStorage.setItem("token",JSON.stringify(res.data[0])) },0);
       setTimeout(() => { navigate("/") },0);
-      // console.log(localStorage.getItem("token"));
-      // navigate("/");
-      // setTimeout(() => { navigate("/"); console.log(111)},10) //每次要点击两次！！！？
     }
     });
 
@@ -215,29 +212,27 @@ export default function Login() {
               placeholder="Password"
             />
           </Form.Item>
-          <Form.Item>
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="login-form-button"
-            >
-              登录
-            </Button>
-          </Form.Item>
-          
+          <div style={{display:"flex",justifyContent:"space-between"}}>
+            <Form.Item >
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button"
+              >
+                登录
+              </Button>
+            </Form.Item>
+            <Form.Item>
+              <Button
+                type="primary"
+                className="login-form-button"
+                onClick={() => { navigate("/news") }}
+              >
+                游客登录
+              </Button>
+            </Form.Item>
+          </div>
         </Form>
-        {/* <form>
-          <span>&nbsp;账号:&nbsp;</span>
-          <div >
-          <input type="text" placeholder="请输入" name="username" id="username" />
-          </div>
-          <span>&nbsp;密码:&nbsp;</span>
-          <div >
-          <input type="text" placeholder="请输入" name="password" id="password" />
-          </div>
-        </form> */}
-        {/* <button οnclick="user_login()">ajax</button> */}
-        {/* <button>登录</button> */}
       </div>
     </div>
   );

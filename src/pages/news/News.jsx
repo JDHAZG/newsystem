@@ -11,6 +11,7 @@ export default function News() {
   return (
     <div style={{ width: "95%", margin: "0 auto" }}>
       <PageHeader
+        onBack={() => window.history.back()}
         className="site-page-header"
         title="全球大新闻"
         subTitle="查看新闻"
