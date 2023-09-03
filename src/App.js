@@ -10,7 +10,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 export default function App() {
   // const element=useRoutes(routes)
   return (
-    <div>
+    <div style={{height:"100%"}}>
       <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <IndexRouter/>
